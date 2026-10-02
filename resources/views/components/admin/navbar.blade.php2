@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand navbar-light bg-white shadow-sm px-4">
+    <form class="d-flex w-50">
+        <input class="form-control me-2" type="search" placeholder="search">
+        <button class="btn btn-outline-primary" type="submit">
+            <i class="bi bi-search"></i>
+        </button>
+    </form>
+
+    <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item me-3">
+            <a class="nav-link position-relative" href="#">
+                <i class="bi bi-bell-fill fs-5"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                </span>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="bi bi-person-circle me-1"></i> Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="{{ url('/logoutAdm') }}">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

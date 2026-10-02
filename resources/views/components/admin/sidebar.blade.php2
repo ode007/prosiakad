@@ -1,0 +1,64 @@
+<nav class="col-md-2 d-none d-md-block sidebar p-3">
+    <h4 class="text-white mb-4 text-center">Admin SIAKAD</h4>
+
+    <ul class="nav flex-column gap-1">
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="/admin/home">
+                <i class="bi bi-house-door me-2"></i> Home
+            </a>
+        </li>
+
+        {{-- <li class="nav-item">
+            <a class="nav-link rounded px-3" href="/admin/mahasiswa">
+                <i class="bi bi-people-fill me-2"></i> Mahasiswa
+            </a>
+        </li> --}}
+
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" 
+               data-bs-toggle="collapse" href="#menuKemahasiswaan" role="button" aria-expanded="false" aria-controls="menuKemahasiswaan">
+                <i class="bi bi-people-fill me-2"></i> Kemahasiswaan
+            </a>
+            <div class="collapse ps-3" id="menuKemahasiswaan">
+                <ul class="nav flex-column gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link rounded px-3" href="/admin/mahasiswa">
+                            <i class="bi bi-folder me-2"></i> Manajemen Data
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded px-3" href="/admin/akun-mahasiswa">
+                            <i class="bi bi-person-badge me-2"></i> Akun
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="#">
+                <i class="bi bi-person-badge-fill me-2"></i> Dosen
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="#">
+                <i class="bi bi-journal-bookmark-fill me-2"></i> Mata Kuliah
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="#">
+                <i class="bi bi-card-checklist me-2"></i> KRS
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="#">
+                <i class="bi bi-clipboard-data-fill me-2"></i> Nilai
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded px-3" href="#">
+                <i class="bi bi-gear-fill me-2"></i> Pengaturan
+            </a>
+        </li>
+    </ul>
+</nav>
